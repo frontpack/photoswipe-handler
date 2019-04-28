@@ -27,7 +27,7 @@
 				target = target.parentNode;
 			}
 
-		} while (target);
+		} while (target && (typeof target.tagName === 'string'));
 	};
 
 
